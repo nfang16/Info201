@@ -1,4 +1,5 @@
 # Project Proposal 
+Link to project https://nfang16.shinyapps.io/home_prices_project2/
 
 By Daniel Li, Candice Lee, Nick Fang and Torin Dye 
 =======
