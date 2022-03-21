@@ -1,0 +1,64 @@
+---
+title: "Index.R"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+knitr::opts_chunk$set(echo = F)
+source("analysis.R")
+```
+
+## Summary
+This report focuses on the shootings that occured during 2018, using crowd
+sourced data. In 2018, there were `r num_shootings` shootings. The total amount 
+of people injured in shootings during 2018 was `r people_injured` . The total 
+amount of deaths that occured was `r lives_lost`. Some of the most dangerous 
+states in the country include: Illinois, California, and Florida. These states 
+rank in the top 3 in casualties and injuries. 
+
+## (Top 10) Most Deaths by City
+The table shown below shows the most impacted cities during 2018. The number 
+represented is the number of deaths that have occured as a result. As shown 
+below, with `r chicago_killed` casulaties, Chicago is the deadliest city in 2018. 
+```{r}
+kable(most_impacted_cities, col.names = c("City", "Number Killed"))
+```
+
+## (Top 10) Most Injuries by State
+The table shown below shows the states with the most shooting injuries by during
+2018. 
+```{r}
+kable(injured_by_state, col.names = c("State", "Number Injured"))
+```
+
+## Parkland Shooting
+On `r parkland_date`, one of the [deadliest shootings](https://www.nytimes.com/2018/02/14/us/parkland-school-shooting.html) 
+in recent history took place in `r parkland_city`, `r parkland_state`. This 
+shooting took place at Stoneman Douglas High School (`r parkland_address`). This
+tragic event resulted with a total of `r parkland_killed` people killed and an 
+additional `r parkland_injured` people injured. Since then, the killer has been 
+in custody and is awaiting a trial which will determine whether or not he will 
+recieve the dealth penalty. The aftermath of this event has further increased 
+the debate on the issue of gun control. Proponents of gun control cite this 
+event as one of the reasons why more regulations need to be put in place. 
+
+
+## Map of Shootings in the US
+`r l`
+This map displays all the shootings that involved deaths during 2018.
+
+
+## Plot of Choice 
+``` {r analysis, echo=FALSE}
+  print(plot_final)
+```
+
+This plot groups the shootings dataset by month. The number of deaths and 
+injuries is then evaluated and compared. As shown on the graph, the number of 
+injuries per month is much greater than deaths per month. The number of injuries
+peaks towards the middle of the year.
+
+
+
+
