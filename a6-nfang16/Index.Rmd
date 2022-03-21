@@ -1,0 +1,50 @@
+---
+title: "Index"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+source("propublica.R")
+source("civic-info.R")
+source("api-keys.R")
+```
+
+##Introduction
+For this report, I am describing **Hawaii** and its _representatives_. The zip 
+code utilized throughout this report is **96817**. This is the [link](https://www.googleapis.com/civicinfo/v2/representatives?key=AIzaSyBQaKwvFgJkkQQCApSgW6ksAFrlHh8quGg&address=96817) to the civic-info API. This is the [link](https://api.propublica.org/congress/v1/members/house/HI/current.json) to 
+the propublica API. (There's something glitchy with the API key but I will try 
+to insert this to the Read.ME file, its also imbedded in the propublica file)
+
+##Hawaii's Representatives
+```{r}
+display_table
+```
+
+
+##Hawaii's House of Representatives Charts
+```{r}
+first_plot
+```
+
+
+```{r}
+second_plot
+```
+
+
+##Tulsi Gabbard
+Tulsi Gabbard is one of 2 representatives from the state of Hawaii. Her date of 
+birth is `r dob_gabbard`, which would make her `r age_gabbard` years old. You 
+can find Tulsi Gabbard on Twitter under the username **`r twitter_gabbard`**. 
+In the past `r num_votes` votes in the 116th congress, Tulsi Gabbard voted "Yes" 
+`r yes_votes` times. 
+
+
+
+
+
+
+
