@@ -1,0 +1,13 @@
+name: home_prices_project
+title: home_prices_project
+username:
+account: nfang16
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 791035
+bundleId: 1941037
+url: https://nfang16.shinyapps.io/home_prices_project/
+when: 1552607447.16495
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .Rapp.history|API-Key.R|README.md|server-nf.R|server-old.r|server-td.R|ui-dl.R|ui-nf.R|ui-old.R|ui-td.R
